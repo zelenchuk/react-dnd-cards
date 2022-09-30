@@ -34,13 +34,16 @@ const MainDND = () => {
         setCurrentItem(item);
     }
     const onDragEndHandler = (e) => {
+        console.log(e.target);
         e.target.style.boxShadow = 'none';
         e.target.style.opacity = '1';
+
     }
     const onDropHandler = (e, place, item) => {
         e.preventDefault();
         e.target.style.boxShadow = 'none';
-        e.target.style.opacity = '1';
+        e.target.style.opacity = '.33';
+        e.target.parentElement.parentElement.style.background = 'red';
 
         const currentIndex = currentPlace.items.indexOf(currentItem);
         currentPlace.items.splice(currentIndex, 1);
@@ -65,13 +68,13 @@ const MainDND = () => {
     return (
         <div id={'mainBlock'}>
             {places.map(place =>
-                <div className={'placeItem'}>
+                <div key={place.placeID} className={'placeItem'}>
                     <div>
-                        <strong>
-                            placeID: {place.placeID}&nbsp;&nbsp;
-                            Title: {place.title}&nbsp;&nbsp;
-                            Count items in: {place.items.length}
-                        </strong>
+                        <div>
+                            <strong>placeID: {place.placeID}&nbsp;&nbsp;Title: {place.title}</strong>
+                        </div>
+                        <div>Count items in: {place.items.length}</div>
+
 
                     </div>
 

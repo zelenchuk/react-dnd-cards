@@ -12,20 +12,21 @@ body * {
 }
 
 #mainBlock {
-    padding: 0;
-    width: 1300px;
+    padding: 20px;
+    width: 1200px;
     margin: 40px auto;
     background: #eee;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
 
 .placeItem {
     background: #ec70bd;
-    padding: 0;
+    padding: 8px 0 0 0;
+    text-align: center;
 }
 
 .placeItem div {
@@ -39,6 +40,6 @@ body * {
     height: 300px;
     color: #fff;
     font-size: 10px;
-    margin: 5px 0;
+    margin: 5px 0 0 0;
     cursor: grab;
 }
