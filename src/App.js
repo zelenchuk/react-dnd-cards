@@ -1,6 +1,6 @@
 import React from 'react';
-import OneComponent from './OneComponent';
+import HorizontalMain from "./HorizontalMain";
 
-const App = () => <OneComponent/>
+const App = () => <HorizontalMain/>
 
 export default App;

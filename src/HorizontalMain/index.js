@@ -1,3 +1,4 @@
+import './index.css'
 import React, {useState} from "react";
 
 
@@ -10,9 +11,8 @@ const initialState = [
     {placeID: 6, title: "Sixth", items: [{itemID: 8}]},
 ];
 
-const MainDND = () => {
+const Index = () => {
     const [places, setPlaces] = useState(initialState);
-
     const [currentPlace, setCurrentPlace] = useState(null);
     const [currentItem, setCurrentItem] = useState(null);
 
@@ -93,4 +93,4 @@ const MainDND = () => {
 }
 
 
-export default MainDND;
+export default Index;
