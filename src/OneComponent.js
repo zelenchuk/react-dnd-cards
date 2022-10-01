@@ -102,6 +102,3 @@ const MainDND = () => {
 
 
 export default MainDND;
-
-
-
