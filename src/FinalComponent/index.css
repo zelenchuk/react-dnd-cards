@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body * {
+    transition: .2s ease-in-out;
+}
+
+#mainBlock * {
+    user-select: none;
+}
+
+#mainBlock {
+    padding: 20px;
+    width: 1200px;
+    margin: 40px auto;
+    background: #eee;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.placeItem {
+    background: #ec70bd;
+    padding: 8px 0 0 0;
+    text-align: center;
+}
+
+.placeItem div {
+    font-size: 12px;
+}
+
+
+.itemsElement {
+    background: #000;
+    padding: 10px;
+    height: 300px;
+    color: #fff;
+    font-size: 10px;
+    margin: 5px 0 0 0;
+    cursor: grab;
+}
+
+.placeBody {
+    background: yellow;
+    height: 400px;
+}
+
+.onDragOver {
+    background: limegreen;
+}
+
+.onDrop {
+    background: blue;
+}
