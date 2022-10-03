@@ -58,21 +58,19 @@ const Droppable = (props) => {
                     {placeItems.length > 0 && (
                         <section>
                             {placeItems.map((i, index) =>
-                                <div
-                                    className={'inPlaceItems'}
-                                    key={index}
-                                    id={i.itemID}
-                                    draggable
-                                    onDragStart={e => e.dataTransfer.setData('Text/html', e.target.id)}
-                                    onDrop={(event) => {
-                                        event.preventDefault();
-                                    }}
+                                <div className={'inPlaceItems'}
+                                     key={index}
+                                     id={i.itemID}
+                                     draggable
+                                     onDragStart={e => e.dataTransfer.setData('Text/html', e.target.id)}
+                                     onDrop={(event) => {
+                                         event.preventDefault();
+                                     }}
                                 >
                                     {i.itemID}
                                 </div>)}
                         </section>
                     )}
-
                 </div>
 
 

@@ -57,3 +57,11 @@ body * {
 .onDrop {
     background: blue;
 }
+
+.newItemsStyle {
+    color: yellow;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 5px;
+}
