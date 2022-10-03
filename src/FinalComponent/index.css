@@ -51,6 +51,7 @@ body * {
 
 .onDragOver {
     background: limegreen;
+    border-style: dotted;
 }
 
 .onDrop {

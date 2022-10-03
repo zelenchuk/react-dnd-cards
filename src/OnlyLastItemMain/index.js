@@ -1,7 +1,6 @@
 import './index.css'
 import React, {useState} from "react";
 
-
 const initialState = [
     {placeID: 1, title: "Firstly", items: [{itemID: 1}]},
     {placeID: 2, title: "Second", items: [{itemID: 2}]},
@@ -99,6 +98,7 @@ const MainDND = () => {
             )}
         </div>
     )
+
 }
 
 
