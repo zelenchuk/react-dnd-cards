@@ -37,11 +37,22 @@ const FinalComponent = () => {
                             // if (target.classList.contains('newItemsStyle')) {}
                             e.target.classList.remove('onDragOver')
                             console.log("on me something drop");
-                            const data = e.dataTransfer.getData("text/html");
-                            //alert(data);
 
-                            setPlace1([...place1, {itemID: parseInt(data)}]);
-                            setItems(items.filter(i => i.itemID !== parseInt(data)));
+
+                            const itemID = parseInt(e.dataTransfer.getData("text/html"));
+
+                            const isExistInItems = items.find(i => i.itemID === itemID);
+
+                            if (isExistInItems) {
+                                console.log("item exist in items");
+                                setPlace1([...place1, {itemID: itemID}]); // update place
+                                setItems(items.filter(i => i.itemID !== itemID)); // update items
+                            } else {
+                                console.log("item not exist in items");
+
+                            }
+
+
                         }}
                         className="placeDropBody">
                         {place1.length > 0 && (
